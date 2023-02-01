@@ -76,9 +76,9 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Add class Person as the parent class]**
+- **[Add class Student as a child class of Parent class]**
+- **[Add class Teacher as a child class of Parent class]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -127,6 +127,16 @@ Then cd into oop_school_library
 - LinkedIn: [Abdullateef Bello](https://www.linkedin.com/in/abdullateef-bello-1b8006228/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURE -->
+## 👥 Future Features <a name="future-features"></a>
+
+> Describe 1 - 3 features you will add to the project.
+
+- Add new students or teachers.
+- Add new books.
+- Save records of who borrowed a given book and when.
+
 
 <!-- CONTRIBUTING -->
 
