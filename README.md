@@ -146,6 +146,6 @@ Thanks to all Microverse partners for their advice.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](C:\Users\J T COMPUTER\Microverse-April18\Module4- Ruby  Databases and Interviewing\oop_school_library\MIT.md) licensed.
+This project is [MIT](./MIT.md)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
