@@ -2,7 +2,7 @@ require './nameable'
 
 class Person < Nameable
   # Attribute accessor setters and getters
-  attr_reader :id
+  attr_reader :id, :rentals
   attr_accessor :name, :age
 
   # Constructor
@@ -12,12 +12,18 @@ class Person < Nameable
     @name = name
     @age = age
     @parent_permission = parent_permission
+    @rentals = []
   end
 
   # public method
 
   def correct_name
     @name
+  end
+
+  def add_rental(rental)
+    @rentals.push(rental)
+    rental.person = self
   end
 
   def can_use_services?
