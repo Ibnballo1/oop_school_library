@@ -10,13 +10,39 @@ class Rental
     person.rental << self
   end
 
-  def book=(book)
-    @book = book
-    book.rentals.push(self) unless book.rentals.include?(self)
+  def self.create_rental(books, people)
+    if books.empty?
+      puts 'Please create a book first (option 4).'
+    elsif people.empty?
+      puts 'Please add a person first (option 3).'
+    else
+      puts 'Select a book from this list by number'
+      books.each do |book|
+        puts "#{books.find_index(book)} - #{book.title}"
+      end
+      selected_book = gets.to_i
+      print 'Date: '
+      date = gets.chomp
+      puts 'Select a person from this list by number'
+      people.each do |person|
+        puts "#{people.find_index(person)} - #{person.name}"
+      end
+      selected_person = gets.to_i
+
+      Rental.new(date, books[selected_book], people[selected_person])
+    end
   end
 
-  def person=(person)
-    @person = person
-    person.rentals.push(self) unless person.rentals.include?(self)
+  def self.list_all_rentals_person_id(people, rentals)
+    Person.list_all_people(people)
+    print 'Person ID: '
+    person_id = gets.to_i
+    puts(rentals.map do |rental|
+      if rental.person.id == person_id
+        "Rentals:\nDate: #{rental.date}  Book: #{rental.book.title}"
+      else
+        'No rentals found for this person'
+      end
+    end)
   end
 end
