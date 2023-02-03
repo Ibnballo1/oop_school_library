@@ -1,9 +1,10 @@
 [
-  {
-    "id": "230",
-    "class": "Teacher",
-    "name": "fdja",
-    "age": "48",
-    "specialization": "aj"
-  }
+	{
+		"id": "886",
+		"class": "Student",
+		"name": "Abdullaah",
+		"age": "13",
+		"classroom": "3",
+		"parent_permission": "true"
+	}
 ]

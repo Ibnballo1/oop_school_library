@@ -38,7 +38,7 @@ class UserInput
       }
       books_json << book
     end
-    File.write('./data/books.json', JSON.pretty_generate(books_json, { indent: "\t", object_nl: "\n" }))
+    File.write('./books.json', JSON.pretty_generate(books_json, { indent: "\t", object_nl: "\n" }))
   end
 
   def self.save_rentals(rentals)
@@ -51,6 +51,6 @@ class UserInput
       }
       rentals_json << rental
     end
-    File.write('./data/rentals.json', JSON.pretty_generate(rentals_json, { indent: "\t", object_nl: "\n" }))
+    File.write('./rentals.json', JSON.pretty_generate(rentals_json, { indent: "\t", object_nl: "\n" }))
   end
 end
