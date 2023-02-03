@@ -26,15 +26,11 @@
 
 # 📖 [OOP_School_Library] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
 **[OOP_School_Library]** is a project aimed at building a school library app. In this initial step, I implemented the classes to represent students and teachers.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
 
 <details>
   <summary>Client</summary>
@@ -47,8 +43,6 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **[Add class Person as the parent class]**
 - **[Add class Student as a child class of Parent class]**
 - **[Add class Teacher as a child class of Parent class]**
@@ -59,8 +53,6 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
 - [Live Demo Link](#)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -68,8 +60,6 @@
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -91,8 +81,6 @@ Then cd into oop_school_library
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Abdullateef Bello**
 
 - GitHub: [@Ibnballo1](https://github.com/Ibnballo1/)
@@ -103,8 +91,6 @@ Then cd into oop_school_library
 
 <!-- FUTURE FEATURE -->
 ## 👥 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - Add new students or teachers.
 - Add new books.
@@ -126,8 +112,6 @@ Feel free to check the [issues page](https://github.com/Ibnballo1/oop_school_lib
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
 If you like this project, give a ⭐️!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -135,8 +119,6 @@ If you like this project, give a ⭐️!
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-> Give credit to everyone who inspired your codebase.
 
 Thanks to all Microverse partners for their advice.
 
