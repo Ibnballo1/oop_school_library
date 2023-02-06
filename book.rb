@@ -1,3 +1,6 @@
+require './person'
+require './rental'
+
 class Book
   attr_accessor :title, :author, :rentals
 
@@ -5,20 +8,6 @@ class Book
     @title = title
     @author = author
     @rentals = []
-  end
-
-  def self.create_book
-    print 'Title: '
-    title = gets.chomp
-    print 'Author: '
-    author = gets.chomp
-    Book.new(title, author)
-  end
-
-  def self.list_all_books(books)
-    books.each do |book|
-      puts "Title: '#{book.title}' Author: #{book.author}"
-    end
   end
 
   def add_rental(person, date)
