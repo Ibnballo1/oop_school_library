@@ -1,6 +1,5 @@
 class Nameable
-  # @return [String]
   def correct_name
-    raise NotImplementedError, "#{self.class} has not implemented method '#{__method__}'"
+    raise NotImplementedError, "OPS, the #{method} has not been implemented,please add a valid name"
   end
 end
