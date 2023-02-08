@@ -1,9 +1,11 @@
 require 'json'
+
 def loading_data(library)
   loading_people(library)
   loading_books(library)
   loading_rentals(library)
 end
+
 def loading_people(library)
   File.write('people.json', JSON.generate([])) unless File.exist?('people.json')
   people = JSON.parse(File.read('people.json'))
@@ -17,6 +19,7 @@ def loading_people(library)
     end
   end
 end
+
 def loading_books(library)
   File.write('books.json', JSON.generate([])) unless File.exist?('books.json')
   books = JSON.parse(File.read('books.json'))
@@ -25,6 +28,7 @@ def loading_books(library)
     library.books.push(book)
   end
 end
+
 def loading_rentals(library)
   File.write('rentals.json', JSON.generate([])) unless File.exist?('rentals.json')
   rentals = JSON.parse(File.read('rentals.json'))
