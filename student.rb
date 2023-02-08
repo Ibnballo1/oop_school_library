@@ -1,28 +1,19 @@
 require './person'
 
 class Student < Person
-  attr_reader :classroom, :parent_permission
+  attr_reader :classroom
 
-  def initialize(*all, classroom)
-    super(*all)
+  def initialize(classroom, age, name, parent_permission)
+    super(age, name, parent_permission)
     @classroom = classroom
   end
 
-  def self.create_student(age, name)
-    print 'Has parent permission? [Y/N]: '
-    parent_permission = gets.chomp
-    parent_permission = parent_permission.downcase == 'y'
-    print 'Please enter a classroom: '
-    classroom = gets.chomp
-    new(age, name, parent_permission, classroom)
+  def play_hooky
+    '¯(ツ)/¯'
   end
 
   def classroom=(classroom)
     @classroom = classroom
     classroom.students.push(self) unless classroom.students.include?(self)
-  end
-
-  def play_hooky
-    '¯\(ツ)/¯'
   end
 end
