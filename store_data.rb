@@ -17,10 +17,7 @@ def preserve_people(library)
       people.push(teacher)
     end
   end
-  File.open('people.json', 'w') do |file|
-    file.puts(JSON.generate(people).to_s)
-  end
-  # File.write('people.json', "#{JSON.generate(people)}\n")
+  File.write('people.json', "#{JSON.generate(people)}\n")
 end
 
 def preserve_books(library)
@@ -29,10 +26,7 @@ def preserve_books(library)
     book = { title: book.title, author: book.author }
     books.push(book)
   end
-  File.open('books.json', 'w') do |file|
-    file.puts(JSON.generate(books).to_s)
-  end
-  # File.write('books.json', "#{JSON.generate(books)}\n")
+  File.write('books.json', "#{JSON.generate(books)}\n")
 end
 
 def preserve_rentals(library)
@@ -42,8 +36,5 @@ def preserve_rentals(library)
                person: library.people.index(rental.person), person_name: rental.person.name }
     rentals.push(rental)
   end
-  File.open('rentals.json', 'w') do |file|
-    file.puts(JSON.generate(rentals).to_s)
-  end
-  # File.write('rentals.json', "#{JSON.generate(rentals)}\n")
+  File.write('rentals.json', "#{JSON.generate(rentals)}\n")
 end
