@@ -1,3 +1,6 @@
+require './storing'
+require './loading'
+
 class Menu
   def display_menu(library) # rubocop:disable Metrics/CyclomaticComplexity
     loop do
