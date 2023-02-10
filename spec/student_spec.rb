@@ -13,3 +13,14 @@ describe Student do
     expect(play).to eq('¯(ツ)/¯')
   end
 end
+
+describe '#classroom=' do
+  it 'should set the classroom and add the student to the classroom' do
+    student = Student.new(5, 16, 'Name', 'Parent Permission')
+    classroom = double('Classroom')
+    expect(classroom).to receive(:students).and_return([])
+    expect(classroom).to receive(:students).and_return([student])
+    student.classroom = classroom
+    expect(student.classroom).to eq(classroom)
+  end
+end
