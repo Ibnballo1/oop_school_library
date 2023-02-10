@@ -23,3 +23,16 @@ describe '#author' do
     expect(book.author).to eq('My Author')
   end
 end
+
+# Test for add_rental
+describe '#add_rental' do
+  it 'should add a rental to the rentals array' do
+    person1 = Person.new(18, 'Doe', 'Y')
+    book = Book.new('My Title', 'My Author')
+    date = Time.now
+
+    book.add_rental(person1, date)
+
+    expect(book.rentals.length).to eq(1)
+  end
+end
